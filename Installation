@@ -3,11 +3,11 @@ Installation notes:
 1. MacMini 6.1 (late 2012), Intel Core i5 dual-core a 2.5 GHz, late 2012, RAM 10 (8+2) GB
 Do not connect to wi-fi network (otherwise the installer does not start).
 
-2. Dell LATITUDE E7250 (2016), Intel i5, 8 GB, SSD 256 GB, UEFI
+2. Dell LATITUDE E7250 (2016), Intel i5, 8 GB RAM , SSD 256 GB, UEFI
 
-3. ASUS EEEpc 1215P (2011), Intel Atom N550 / 1.5 GHz, RAM 2 GB, HD 250 GB, 64 bit
+3. ASUS EEEpc 1215P (2011), Intel Atom N550 / 1.5 GHz, 2 GB RAM, HD 250 GB, 64 bit
 Do not connect to wi-fi network (otherwise the installer does not start).
 
-4. Zotac ZBOX MI660 nano (2019), Intel Core i7-8550U Processor (quad-core 1.8 GHz, up to 4.0 GHz), RAM 16 GB. SSD WD Green 240 GB, UEFI
+4. Zotac ZBOX MI660 nano (2019), Intel Core i7-8550U Processor (quad-core 1.8 GHz, up to 4.0 GHz), 16 GB RAM, SSD WD Green 240 GB, UEFI
 
-5. MacBookAir 1,1 (late 2008), Core 2 Duo 1.6 13" Original, RAM 2 GB, EFI 32 bit
+5. MacBookAir 1,1 (late 2008), Core 2 Duo 1.6 13" Original, 2 GB RAM, EFI 32 bit
