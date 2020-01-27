@@ -1,13 +1,35 @@
 New Solus 4.1 Plasma released (https://getsol.us/2020/01/25/solus-4-1-released/)
 Installation notes:
+
+Do not connect to ethernet or wi-fi network before to install (otherwise the installer does not start).
+
 1. MacMini 6.1 (late 2012), Intel Core i5 dual-core a 2.5 GHz, late 2012, RAM 10 (8+2) GB
-Do not connect to wi-fi network (otherwise the installer does not start).
+wi-fi (BCM4331):
+sudo eopkg up
+sudo eopkg it broadcom-sta-current
+From the command line, enter the following:
+echo "install wl /sbin/modprobe cfg80211; /sbin/insmod /lib/modules/\$(/bin/uname -r)/kernel/drivers/net/wireless/wl.ko" | sudo tee /etc/modprobe.d/hackboot.conf
+echo "wl" | sudo tee /etc/modules-load.d/wl.conf
+restart the computer
 
 2. Dell LATITUDE E7250 (2016), Intel i5, 8 GB RAM , SSD 256 GB, UEFI
+everything works
 
 3. ASUS EEEpc 1215P (2011), Intel Atom N550 / 1.5 GHz, 2 GB RAM, HD 250 GB, 64 bit
-Do not connect to wi-fi network (otherwise the installer does not start).
+everything works
 
 4. Zotac ZBOX MI660 nano (2019), Intel Core i7-8550U Processor (quad-core 1.8 GHz, up to 4.0 GHz), 16 GB RAM, SSD WD Green 240 GB, UEFI
+everything works
 
 5. MacBookAir 1,1 (late 2008), Core 2 Duo 1.6 13" Original, 2 GB RAM, EFI 32 bit
+kernel parameter for video:
+echo 'video=SVIDEO:d' | sudo tee /etc/kernel/cmdline
+sudo clr-boot-manager update
+
+wi-fi (BCM4321):
+sudo eopkg up
+sudo eopkg it broadcom-sta-current
+From the command line, enter the following:
+echo "install wl /sbin/modprobe cfg80211; /sbin/insmod /lib/modules/\$(/bin/uname -r)/kernel/drivers/net/wireless/wl.ko" | sudo tee /etc/modprobe.d/hackboot.conf
+echo "wl" | sudo tee /etc/modules-load.d/wl.conf
+restart the computer
