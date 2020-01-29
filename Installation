@@ -11,15 +11,19 @@ From the command line, enter the following:
 echo "install wl /sbin/modprobe cfg80211; /sbin/insmod /lib/modules/\$(/bin/uname -r)/kernel/drivers/net/wireless/wl.ko" | sudo tee /etc/modprobe.d/hackboot.conf
 echo "wl" | sudo tee /etc/modules-load.d/wl.conf
 restart the computer
+multi-boot with refind
 
 2. Dell LATITUDE E7250 (2016), Intel i5, 8 GB RAM , SSD 256 GB, UEFI
 everything works
+multi-boot with refind
 
 3. ASUS EEEpc 1215P (2011), Intel Atom N550 / 1.5 GHz, 2 GB RAM, HD 250 GB, 64 bit
 everything works
+multi-boot with grub2
 
 4. Zotac ZBOX MI660 nano (2019), Intel Core i7-8550U Processor (quad-core 1.8 GHz, up to 4.0 GHz), 16 GB RAM, SSD WD Green 240 GB, UEFI
 everything works
+multi-boot with refind
 
 5. MacBookAir 1,1 (late 2008), Core 2 Duo 1.6 13" Original, 2 GB RAM, EFI 32 bit
 kernel parameter for video:
@@ -33,3 +37,4 @@ From the command line, enter the following:
 echo "install wl /sbin/modprobe cfg80211; /sbin/insmod /lib/modules/\$(/bin/uname -r)/kernel/drivers/net/wireless/wl.ko" | sudo tee /etc/modprobe.d/hackboot.conf
 echo "wl" | sudo tee /etc/modules-load.d/wl.conf
 restart the computer
+
